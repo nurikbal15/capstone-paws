@@ -1,0 +1,70 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model JadwalMakan {
+  jadwalId     Int        @id @default(autoincrement())
+  jadwalMakan  String
+  waktu        DateTime
+  jenisMakanan String
+  peliharaan   Peliharaan @relation(fields: [peliharaanId], references: [peliharaanId])
+  peliharaanId Int
+}
+
+model JadwalVitamin {
+  jadwalId     Int        @id @default(autoincrement())
+  jenisVitamin String
+  waktu        DateTime
+  peliharaan   Peliharaan @relation(fields: [peliharaanId], references: [peliharaanId])
+  peliharaanId Int
+}
+
+model JadwalAktifitas {
+  jadwalId        Int        @id @default(autoincrement())
+  jadwalAktifitas String
+  waktu           DateTime
+  peliharaan      Peliharaan @relation(fields: [peliharaanId], references: [peliharaanId])
+  peliharaanId    Int
+}
+
+model JadwalTemu {
+  jadwalId     Int        @id @default(autoincrement())
+  jadwalTemu   String
+  waktu        DateTime
+  peliharaan   Peliharaan @relation(fields: [peliharaanId], references: [peliharaanId])
+  peliharaanId Int
+}
+
+enum JenisKelamin {
+  JANTAN
+  BETINA
+}
+
+model Peliharaan {
+  peliharaanId    Int               @id @default(autoincrement())
+  nama            String
+  umur            String
+  jenisKelamin    JenisKelamin
+  user            User              @relation(fields: [userId], references: [userUID])
+  userId          String
+  JadwalMakan     JadwalMakan[]
+  JadwalVitamin   JadwalVitamin[]
+  JadwalAktifitas JadwalAktifitas[]
+  JadwalTemu      JadwalTemu[]
+}
+
+model User {
+  userUID    String       @id
+  peliharaan Peliharaan[]
+}
