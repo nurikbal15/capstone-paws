@@ -106,3 +106,7 @@ link demo
 ## Cloud Computing Documentation
 
 <a href="https://github.com/nurikbal15/capstone-paws/tree/main/Cloud%20Computing">Link for Cloud Computing Documentation
+
+# Advisor
+- Fahira Nurul Ichzza
+- Yolan Anjani Usen		
