@@ -95,17 +95,23 @@ link demo
 
 # Documentation
 
-## Machine Learning Development Documentation
+## Machine Learning Documentation
 
-<a href="https://github.com/nurikbal15/capstone-paws/tree/main/Machine%20Learning">Link for Machine Learning Documentation
+The dataset resources is taken from :
+- Cat and Dog Classification : https://github.com/laxmimerit/dog-cat-full-dataset/tree/master/data
+- Disease : https://github.com/OPet-OnlineDiagnosisforYourPet-sDisease/MachineLearning/tree/main/dataset
+- Breeds of Cat : https://drive.google.com/drive/folders/1TRrZYdz6b5NR6RTDZygNoe5jmZ09MIZN
+- Breeds of Dog : https://drive.google.com/drive/folders/1DSFFRgXhR5ZkSAmMChsl2CDGktYtBem4
+
+Visit [this repository](https://github.com/nurikbal15/capstone-paws/tree/main/Machine%20Learning) for more information on our use of machine learning.
 
 ## Mobile Development Documentation
   
-<a href="https://github.com/nurikbal15/capstone-paws/tree/main/Mobile%20Development">Link for Mobile Development Documentation
+Visit [this repository](https://github.com/nurikbal15/capstone-paws/tree/main/Mobile%20Development) for more information on our use of machine learning.
 
 ## Cloud Computing Documentation
 
-<a href="https://github.com/nurikbal15/capstone-paws/tree/main/Cloud%20Computing">Link for Cloud Computing Documentation
+Visit [this repository](https://github.com/nurikbal15/capstone-paws/tree/main/Cloud%20Computing) for more information on our use of machine learning.
 
 # Advisor
 - Fahira Nurul Ichzza
