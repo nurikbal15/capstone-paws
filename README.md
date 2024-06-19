@@ -100,8 +100,8 @@ link demo
 The dataset resources is taken from :
 - Cat and Dog Classification : https://github.com/laxmimerit/dog-cat-full-dataset/tree/master/data
 - Disease : https://github.com/OPet-OnlineDiagnosisforYourPet-sDisease/MachineLearning/tree/main/dataset
-- Breeds of Cat : https://drive.google.com/drive/folders/1TRrZYdz6b5NR6RTDZygNoe5jmZ09MIZN
-- Breeds of Dog : https://drive.google.com/drive/folders/1DSFFRgXhR5ZkSAmMChsl2CDGktYtBem4
+- Breeds of Cat : https://www.kaggle.com/datasets/willyardiyanto/12-ras-kucing-noval/data & https://www.kaggle.com/datasets/sharingganteng/klasifikasi-3-ras-kucing
+- Breeds of Dog : https://www.kaggle.com/competitions/dog-breed-identification/data
 
 Visit [this repository](https://github.com/nurikbal15/capstone-paws/tree/main/Machine%20Learning) for more information on our use of machine learning.
 
