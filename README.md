@@ -1,10 +1,3 @@
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/nurikbal15/capstone-paws">
-    <img src="link logo" width='250dp' alt="Logo" >
-  </a>
-
   <h1 align="center">Paws!</h1>
   <h2 align="center">
   Pet Assistance & Wellness System</h2> 
@@ -13,8 +6,6 @@
   This is a project to fulfill the  <a href="https://grow.google/intl/id_id/bangkit/"><strong>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</strong></a>
    Program.
   <br />
-    <br />
-    <br />
     <a href="https://docs.google.com/document/d/1wk7jY7WCEzWCcJeXM1Dkm1H1pL9e61Ruh2rQUNEUBl4/edit?usp=sharing">Project Brief</a>
   ·
   <a href="Link app">APK Link</a>
