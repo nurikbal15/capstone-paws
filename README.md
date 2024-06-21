@@ -8,9 +8,9 @@
   <br />
     <a href="https://docs.google.com/document/d/1wk7jY7WCEzWCcJeXM1Dkm1H1pL9e61Ruh2rQUNEUBl4/edit?usp=sharing">Project Brief</a>
   ·
-  <a href="Link app">APK Link</a>
+  <a href="https://pawscapstone-nlf62rr54a-et.a.run.app">APK Link</a>
   ·
-  <a href="Link video">Video Presentation</a>
+  <a href="https://youtu.be/ErDiam2LyUQ">Video Presentation</a>
   ·
   <a href="https://www.canva.com/design/DAGILqDQbkQ/f4wfactjLqGuans3IUHR5A/view?utm_content=DAGILqDQbkQ&utm_campaign=designshare&utm_medium=link&utm_source=editor">Presentation Slide</a>
     <br />
