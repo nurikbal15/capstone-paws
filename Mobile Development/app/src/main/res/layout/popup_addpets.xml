@@ -1,0 +1,132 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/popup_background">
+
+    <TextView
+        android:id="@+id/popup_text"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Pet Data"
+        android:fontFamily="@font/alata"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/pet_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Pet name"
+        android:background="@drawable/input_text"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/alata"
+        app:layout_constraintTop_toBottomOf="@+id/popup_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/pet_age"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Pet's date of birth"
+        android:textSize="15sp"
+        android:fontFamily="@font/alata"
+        android:background="@drawable/input_text"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/pet_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/pet_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Pet's gender"
+        android:textSize="15sp"
+        android:fontFamily="@font/alata"
+        android:background="@drawable/input_text"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/pet_age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/pet_type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Type"
+        android:textSize="15sp"
+        android:fontFamily="@font/alata"
+        app:layout_constraintTop_toBottomOf="@+id/pet_gender"
+        app:layout_constraintStart_toStartOf="@id/toggle_switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <include layout="@layout/toggle_switch"
+        android:id="@+id/toggle_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/pet_type_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/pet_breed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Pet's breed"
+        android:textSize="15sp"
+        android:background="@drawable/input_text"
+        android:padding="10dp"
+        android:fontFamily="@font/alata"
+        app:layout_constraintTop_toBottomOf="@+id/toggle_switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/pet_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add photo"
+        android:background="@drawable/input_text"
+        android:padding="10dp"
+        android:fontFamily="@font/alata"
+        android:drawableStart="@drawable/ic_camera"
+        android:drawablePadding="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/pet_breed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/popup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_submit"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:fontFamily="@font/alata"
+        app:layout_constraintTop_toBottomOf="@+id/pet_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

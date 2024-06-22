@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/toggle_selector">
+
+    <RadioButton
+        android:id="@+id/rb_cat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/toggle_selector"
+        android:button="@android:color/transparent"
+        android:checked="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Cat"
+        android:textColor="@drawable/toggle_text_selector"
+        android:textSize="16sp" />
+
+    <RadioButton
+        android:id="@+id/rb_dog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/toggle_selector"
+        android:button="@android:color/transparent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Dog"
+        android:textColor="@drawable/toggle_text_selector"
+        android:textSize="16sp" />
+</RadioGroup>

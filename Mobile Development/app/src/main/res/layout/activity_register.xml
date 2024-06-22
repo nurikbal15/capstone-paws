@@ -3,11 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/register"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
-    tools:context=".RegisterActivity">
+    tools:context=".activity.RegisterActivity">
 
     <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButtonRegister"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Dog Image -->
     <ImageView
@@ -20,95 +33,117 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="-40dp" />
 
-    <ImageButton
-        android:id="@+id/back_button"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_gravity="start"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:padding="12dp"
-        android:src="@drawable/baseline_arrow_back_ios_new_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <!-- Title -->
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/alata"
         android:text="Create your account here"
         android:textColor="#000000"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/back_button" />
+        app:layout_constraintTop_toBottomOf="@id/backButtonRegister" />
 
     <!-- Username Input -->
-    <EditText
-        android:id="@+id/editTextUsername"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter your username"
-        android:background="@drawable/input_text"
-        android:padding="16dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#B0B0B0"
+            android:background="@drawable/input_text"
+            android:fontFamily="@font/alata"
+            android:hint="Enter your username"
+            android:padding="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Email Input -->
-    <EditText
-        android:id="@+id/editTextEmail"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter your email"
-        android:background="@drawable/input_text"
-        android:padding="16dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@id/editTextUsername"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutUsername">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#B0B0B0"
+            android:background="@drawable/input_text"
+            android:fontFamily="@font/alata"
+            android:hint="Enter your email"
+            android:padding="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Password Input -->
-    <EditText
-        android:id="@+id/editTextPassword"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter your password"
-        android:inputType="textPassword"
-        android:background="@drawable/input_text"
-        android:padding="16dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
-        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_text"
+            android:fontFamily="@font/alata"
+            android:textColorHint="#B0B0B0"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Confirm Password Input -->
-    <EditText
-        android:id="@+id/editTextConfirmPassword"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutConfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Confirm your password"
-        android:inputType="textPassword"
-        android:background="@drawable/input_text"
-        android:padding="16dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
-        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
-        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_text"
+            android:fontFamily="@font/alata"
+            android:textColorHint="#B0B0B0"
+            android:hint="Confirm your password"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Register Button -->
     <Button
@@ -116,11 +151,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Register Now"
+        android:fontFamily="@font/alata"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/button_register"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/editTextConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutConfirmPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="30dp" />
@@ -133,6 +169,7 @@
         android:text="Login"
         android:background="@drawable/button_borderlogin"
         android:textColor="#FFFFFF"
+        android:fontFamily="@font/alata"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintTop_toBottomOf="@id/buttonRegister"

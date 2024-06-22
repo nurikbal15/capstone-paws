@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     android:background="#FFFFFF"
-    tools:context=".StartActivity">
+    tools:context=".activity.StartActivity">
 
     <ImageView
         android:id="@+id/bulat_belakang"
@@ -60,7 +61,7 @@
         android:id="@+id/textViewSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/baskervville"
+        android:fontFamily="@font/alata"
         android:text="Your Pet Assistance &amp; Wellness"
         android:textColor="#FF5722"
         android:textSize="16sp"
@@ -77,6 +78,7 @@
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
         android:text="Login"
+        android:fontFamily="@font/alata"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
         android:text="--or--"
+        android:fontFamily="@font/alata"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +106,7 @@
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
         android:text="Register"
+        android:fontFamily="@font/alata"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
